@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mixed selectors</title>
+
+    <style>
+        #place{
+            font-size: x-large;
+        }
+        .live{
+            color:blue;
+            font-size: 1.5em;
+        }
+        div{
+            background-color: darkgoldenrod;
+        }
+        .p1,.p2{
+            background-color: cadetblue;
+        }
+        /* extra style of p2 class althoug p1 and p2 have the same color above 
+        since it is extra style that is why p.p2 is used not only .p2 */
+        p.p2{
+            font-style: italic;  
+        }
+        
+    </style>
+</head>
+<body>
+    <div>
+        <!-- using div container -->
+<p>I am Asif Ruhani</p>      
+<p>what is your name</p>
+</div>
+<p>where <span id="place">are you from</span> </p>
+<p>where <span class="live">do you live </span></p>
+
+<!-- not using div container or any container -->
+<p class="p1">here class is used</p>
+<p class="p2">here class is used also</p>
+</body>
+</html>
